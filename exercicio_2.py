@@ -37,3 +37,16 @@ Resposta:
 Sim
 
 """
+
+#Resolução
+
+BRCA1 = str('chr17')
+cromossomo = input("Digite o cromossomo: ")
+print(cromossomo)
+posição = int(input("Digite a posição: "))
+print(posição)
+
+if cromossomo == BRCA1 and 41196312 <= posição <= 41277500: 
+    print('Sim')  
+else:
+    print('Não')
