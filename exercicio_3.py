@@ -27,6 +27,7 @@ Digite o genoma de referência: hg38
 Resposta:
 Não
 
+
 ----------------------------------
 
 Digite o cromossomo: chr17
@@ -55,3 +56,23 @@ Resposta:
 Não
 
 """
+
+# Resolução
+
+cromossomo = input("Digite o cromossomo: ")
+print(cromossomo)
+posição = int(input("Digite a posição: "))
+print(posição)
+referência = input("Digite o genoma de referência: ")
+print(referência)
+BRCA1 = cromossomo == ('chr17') and 41196312 <= posição <= 41277500 and referência == 'hg19'
+print(BRCA1) 
+BRCA2 = cromossomo == ('chr17') and 43044295 <= posição <= 43125483 and referência == 'hg38' 
+
+
+if BRCA1 :
+    print('Sim')
+elif BRCA2 :
+    print('Sim')
+else:
+    print('Não')
