@@ -82,3 +82,22 @@ Digite a frequencia alélica (em porcentagem): 100
 
 Resposta: Não é relevante.
 """
+
+#Resolução
+
+frequencia_populacional = float(input("Digite a frequencia populacional (em porcentagem):"))
+gene_da_variante = input("Digite o gene: ")
+impacto = input("Digite o Impacto (ALTO ou BAIXO): ")
+reads = int(input("Digite os reads: "))
+vaf = float(input("Digite a frequência alélica (em porcentagem)")) 
+
+if (reads < 10) or (vaf < 20) :
+    print("Não é relevante.  ")
+elif impacto == "ALTO" :
+     print("É relevante. ")
+elif (frequencia_populacional > 5) :
+     print("Não é relevante. ")
+elif (frequencia_populacional > 5) and (gene_da_variante == "HFE" or "MEFV" or "GJB2") :
+     print("É relevante. ")
+else:
+    print("Não é relevante. ")
