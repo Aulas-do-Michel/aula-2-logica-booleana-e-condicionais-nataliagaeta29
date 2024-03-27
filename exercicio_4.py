@@ -73,4 +73,4 @@ elif destino == "Japão" :
     cambio = (valor * JPY)
     print(f"{cambio} JPY ")
 else:
-    print("Não temos essa moeda em caixa" )
+    print("Não temos essa moeda em caixa." )
